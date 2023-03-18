@@ -27,11 +27,8 @@ public class Program
             {
                 Console.WriteLine("\nКоличество должно быть целым числом");
             }
-
-            
             finally { }
         }
-
 
         var myArray = new int[elementsCount];
         while (true)
@@ -43,7 +40,6 @@ public class Program
                     Console.Write($"\nВведите любое положительное целое число{i}:\t ");
                     myArray[i] = int.Parse(Console.ReadLine());
                 }
-
 
                 int maxValue = int.MinValue;
                 int secondMaxValue = int.MinValue;
@@ -60,22 +56,15 @@ public class Program
                         secondMaxValue = myArray[i];
                     }
                 }
-
                 Console.WriteLine($"\nВторое наибольшее число:{secondMaxValue} ");
-
                 break;
             }
-
             catch (System.FormatException)
             {
                 Console.WriteLine("\nУкажите целое число");
             }
-
-        
-
             finally { }
         }
     }
 }
-
 }
